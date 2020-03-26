@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "f0f5611a-9b96-4b99-894d-78532f05616e",
+		"name": "spring-web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post resource",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"1234567\",\n\t\"msg\":\"I'm 1234567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/resources",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one resource",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/resources/123456",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resources",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all resources",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/resources",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resources"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put resource",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"1234567\",\n\t\"msg\":\"I'm 1234567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/resources/1234567",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resources",
+						"1234567"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch resource Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"1234567\",\n\t\"msg\":\"I'm 1234567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/resources/1234567",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resources",
+						"1234567"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a resource",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/resources/1234567",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"resources",
+						"1234567"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
